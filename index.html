@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment responisve galery</title>
+
+    <style>
+        body {
+            width: 1200px;
+            max-width: 90%;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            font-size: 1.2vw;
+            
+
+            
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: 500;
+        }
+
+        #img-container {
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto auto;
+            column-gap: 70px;
+            row-gap: 70px;
+            
+            
+        }
+
+        .box div {
+            background-color: rgb(230, 244, 252);
+            border: 1px solid gray;
+            text-align: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transform: translateY(-5px);
+            padding: 5px;
+            
+        }
+
+         
+        .image {
+            width: 100%;
+            background-color: rgb(83, 156, 224);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px
+            
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .row, header {
+                    max-width: 768px;
+                    padding: 0 20px;
+                    font-size: 1.5em;
+        }
+            #img-container {
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 50px;
+
+                }
+            
+        }
+
+        @media only screen and (max-width: 375px) {
+            .row {
+                    max-width: 100%;
+                    padding: 0 20px;
+                    font-size: 3em;
+        }
+            #img-container {
+                    grid-template-columns: 1fr;
+                    gap: 50px;
+
+                }
+            header {
+                text-align: center;
+                font-size: 4em;
+            }
+        }
+           
+            
+    </style>
+
+</head>
+
+<body>
+
+    
+        <header>
+            <h1>Gallery Heading</h1>
+        </header>
+        <div id="img-container" class="row"> 
+            <div class="box">
+                <img src="placeholder-image.png" class="image">
+                <div>Image Title</div>
+            </div> 
+            <div class="box">
+                <img src="placeholder-image.png" class="image">
+                <div>Image Title</div>
+            </div>
+            <div class="box">
+                <img src="placeholder-image.png" class="image">
+                <div>Image Title</div>
+            </div>
+            <div class="box">
+                <img src="placeholder-image.png" class="image">
+                <div>Image Title</div>
+            </div>
+            <div class="box">
+                <img src="placeholder-image.png" class="image">
+                <div>Image Title</div>
+            </div>
+            <div class="box">
+                <img src="placeholder-image.png" class="image">
+                <div>Image Title</div>
+            </div>
+            <div class="box">
+                <img src="placeholder-image.png" class="image">
+                <div>Image Title</div>
+            </div>
+            <div class="box">
+                <img src="placeholder-image.png" class="image">
+                <div>Image Title</div>
+            </div>
+            <div class="box">
+                <img src="placeholder-image.png" class="image">
+                <div>Image Title</div>
+            </div>
+            <div class="box">
+                <img src="placeholder-image.png" class="image">
+                <div>Image Title</div>
+            </div>
+        </div>
+    
+
+        <div class="row">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consectetur doloribus? Labore fugit assumenda
+            accusamus,
+            ipsam commodi recusandae, a at molestiae harum et dolorem magnam soluta odit magni quasi accusantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consectetur doloribus? Labore fugit assumenda
+            accusamus,
+            ipsam commodi recusandae, a at molestiae harum et dolorem magnam soluta odit magni quasi accusantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consectetur doloribus? Labore fugit assumenda
+            accusamus,
+            ipsam commodi recusandae, a at molestiae harum et dolorem magnam soluta odit magni quasi accusantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consectetur doloribus? Labore fugit assumenda
+            accusamus.</p>
+        </div>
+    
+</body>
+
+</html>
